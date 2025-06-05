@@ -1,31 +1,162 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
     background-color: #EDF2F8;
+}
+
+main {
+    height: 100%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.text-dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.text-light {
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 300px 300px auto;
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira"
+            "attribution attribution attribution attribution";
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 355px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "daniel"
+            "jonathan"
+            "jeanette"
+            "patrick"
+            "kira"
+            "attribution";
+        row-gap: 20px;
+    }
+}
+
+
+.testimonial {
+    padding: 25px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px lightgray);
+}
+
+.testimonial-flex {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-participant img {
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 0;
+    height: 40px;
+    width: 40px;
+}
+
+#daniel img {
+    border: 3px solid #a775f1;
+}
+
+svg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 75px;
+}
+
+#patrick img {
+    border: 3px solid #a775f1;
+}
+
+.testimonial-participant {
+    max-height: 100%;
+}
+
+.testimonial-name {
+    font-size: 16px;
+    margin: 0;
+}
+
+.testimonial-title {
+    opacity: 50%;
+    font-size: 13px;
+    margin: 0;
+}
+
+.testimonial-headline {
+    font-size: 22px;
+    line-height: 1.3em;
+}
+
+.testimonial-body {
+    font-size: 13px;
+    line-height: 1.3em;
+    opacity: 50%;
+}
+
+#daniel {
+    background-color: hsl(263, 55%, 52%); /* moderate violet */
+    grid-area: daniel;
+}
+
+#jonathan {
+    background-color: hsl(217, 19%, 35%); /* very dark grayish blue */
+    grid-area: jonathan;
+}
+
+#jeanette {
+    background-color: hsl(0, 0%, 100%); /* white */
+    grid-area: jeanette;
+}
+
+#patrick {
+    background-color: hsl(219, 29%, 14%); /* very dark blackish blue */
+    grid-area: patrick;
+}
+
+#kira {
+    background-color: hsl(0, 0%, 100%); /* white */
+    grid-area: kira;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    grid-area: attribution;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-#daniel {
-    background-color: #733FC8;
-}
-
-#jonathan {
-    background-color: #79828E;
-}
-
-#jeanette {
-    background-color: #FFFFFF;
-}
-
-#patrick {
-    background-color: #DEE6F1;
-}
-
-#kira {
-    background-color: #B5B9C0;
 }
