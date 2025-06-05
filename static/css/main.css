@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background-color: #EDF2F8;
+    background-color: hsl(210, 46%, 95%);
 }
 
 main {
@@ -12,10 +12,6 @@ main {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-style: normal;
     font-weight: 500;
-}
-
-h2 {
-    font-weight: 600;
 }
 
 .text-dark {
@@ -35,20 +31,20 @@ h2 {
 @media screen and (min-width: 1440px) {
     .grid-container {
         display: grid;
-        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-columns: 225px 225px 225px 225px;
         grid-template-rows: auto auto auto;
         grid-template-areas:
             "daniel daniel jonathan kira"
             "jeanette patrick patrick kira"
             "attribution attribution attribution attribution";
-        column-gap: 20px;
-        row-gap: 20px;
+        column-gap: 25px;
+        row-gap: 25px;
     }
 }
 
 @media screen and (max-width: 1440px) and (min-width: 375px) {
     main {
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .grid-container {
         display: grid;
@@ -65,11 +61,10 @@ h2 {
     }
 }
 
-
 .testimonial {
     padding: 25px;
     border-radius: 10px;
-    filter: drop-shadow(10px 10px 10px lightgray);
+    filter: drop-shadow(10px 10px 20px lightgray);
 }
 
 .testimonial-flex {
@@ -84,19 +79,23 @@ h2 {
     width: 40px;
 }
 
+.testimonial img {
+    border: 3px solid rgba(255,255,255,0);
+}
+
 #daniel img {
-    border: 3px solid #a775f1;
+    border: 3px solid hsl(264, 82%, 70%);
 }
 
 svg {
     position: absolute;
     z-index: -1;
-    top: 20px;
+    top: 0;
     right: 75px;
 }
 
 #patrick img {
-    border: 3px solid #a775f1;
+    border: 3px solid hsl(264, 82%, 70%);
 }
 
 .testimonial-participant {
@@ -115,7 +114,8 @@ svg {
 }
 
 .testimonial-headline {
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 1.2em;
 }
 
