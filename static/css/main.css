@@ -1,7 +1,31 @@
+body {
+    background-color: #EDF2F8;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+#daniel {
+    background-color: #733FC8;
+}
+
+#jonathan {
+    background-color: #79828E;
+}
+
+#jeanette {
+    background-color: #FFFFFF;
+}
+
+#patrick {
+    background-color: #DEE6F1;
+}
+
+#kira {
+    background-color: #B5B9C0;
 }
