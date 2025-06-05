@@ -46,7 +46,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (min-width: 375px) {
     .grid-container {
         display: grid;
         grid-template-columns: 355px;
